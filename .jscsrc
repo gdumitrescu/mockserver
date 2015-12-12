@@ -1,0 +1,7 @@
+{
+	"preset": "node-style-guide",
+	"validateIndentation": null,
+	"disallowSpacesInFunction": null,
+	"requireTrailingComma": null,
+	"requireCapitalizedComments": null
+}

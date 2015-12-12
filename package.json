@@ -1,0 +1,28 @@
+{
+  "name": "mockserver",
+  "version": "1.0.0",
+  "description": "Mock Server",
+  "main": "mockserver.js",
+  "private": true,
+  "scripts": {
+    "eslint": "eslint ./ --fix",
+    "jscs": "jscs ./ --fix",
+    "lint": "npm run eslint && npm run jscs",
+    "start": "json-server mockserver.js",
+    "test": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chance": "^0.8.0",
+    "faker": "^3.0.1",
+    "lodash": "^3.10.1"
+  },
+  "devDependencies": {
+    "pre-commit": "^1.1.2"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}
