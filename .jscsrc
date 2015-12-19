@@ -1,7 +1,9 @@
 {
 	"preset": "node-style-guide",
-	"validateIndentation": null,
 	"disallowSpacesInFunction": null,
+	"maximumLineLength": null,
+	"requireCamelCaseOrUpperCaseIdentifiers": null,
+	"requireCapitalizedComments": null,
 	"requireTrailingComma": null,
-	"requireCapitalizedComments": null
+	"validateIndentation": null
 }
