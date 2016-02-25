@@ -12,6 +12,7 @@ module.exports = function () {
         'Back End',
         'Web',
         'Mobile',
+        'Hybrid',
         'Android',
         'iOS',
         'BlackBerry'
