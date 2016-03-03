@@ -15,12 +15,13 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "chance": "^0.8.0",
+    "chance": "^1.0.1",
     "faker": "^3.0.1",
-    "lodash": "^3.10.1"
+    "json-server": "^0.8.8",
+    "lodash": "^4.5.1"
   },
   "devDependencies": {
-    "eslint": "^1.10.3",
+    "eslint": "^2.2.0",
     "jscs": "^2.7.0",
     "pre-commit": "^1.1.2"
   },
