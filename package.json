@@ -8,7 +8,7 @@
     "eslint": "eslint ./ --fix",
     "jscs": "jscs ./ --fix",
     "lint": "npm run eslint && npm run jscs",
-    "start": "json-server mockserver.js",
+    "start": "json-server server.js",
     "test": ""
   },
   "keywords": [],
