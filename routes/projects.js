@@ -7,24 +7,11 @@ module.exports = function () {
     var faker = require('faker');
     var chance = require('chance').Chance();
 
-    var pipeline = [
-        'Front End',
-        'Back End',
-        'Web',
-        'Mobile',
-        'Hybrid',
-        'Android',
-        'iOS',
-        'BlackBerry'
-    ];
-
-    var pipelineLength = pipeline.length;
-
-    return _.times(pipelineLength, function (i) {
+    return _.times(10, function () {
 
         return {
             id: faker.random.uuid(),
-            name: pipeline[i],
+            name: faker.commerce.productName(),
             active: chance.bool({
                 likelihood: 75
             })

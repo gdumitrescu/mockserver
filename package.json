@@ -2,7 +2,7 @@
   "name": "mockserver",
   "version": "1.0.0",
   "description": "Mock Server",
-  "main": "mockserver.js",
+  "main": "server.js",
   "private": true,
   "scripts": {
     "eslint": "eslint ./ --fix",

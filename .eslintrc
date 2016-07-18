@@ -86,8 +86,8 @@ rules:
     - 1
   no-else-return:
     - 1
-  no-empty-label:
-    - 1
+# no-empty-label: deprecated
+#   - 1
   no-eq-null:
     - 1
   no-eval:
