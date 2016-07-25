@@ -1,17 +1,29 @@
 'use strict'
 
-var pipelines = require('./routes/pipelines')
-var projects = require('./routes/projects')
+var jsonServer = require('json-server')
+
+var devices = require('./routes/devices')
+var organizations = require('./routes/organizations')
 var spaces = require('./routes/spaces')
-var states = require('./routes/states')
 var users = require('./routes/users')
 
-module.exports = function () {
-  return {
-    pipelines: pipelines(),
-    projects: projects(),
-    spaces: spaces(),
-    states: states(),
-    users: users()
-  }
+var env = process.env.NODE_ENV || 'development'
+var port = process.env.PORT || '3000'
+
+var data = {
+  devices: devices(),
+  organizations: organizations(),
+  spaces: spaces(),
+  users: users()
 }
+
+var app = jsonServer.create()
+var router = jsonServer.router(data)
+
+app.use(jsonServer.defaults({
+  logger: env !== 'production'
+}))
+
+app.use(router)
+app.listen(port)
+

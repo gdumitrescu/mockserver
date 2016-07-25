@@ -5,19 +5,19 @@ module.exports = function () {
 
   var faker = require('faker')
 
-  var spaces = [
+  var spaceNames = [
     'DEV',
-    'QA',
-    'UAT',
+    'TEST',
+    'DEMO',
     'LIVE'
   ]
 
-  var spacesLength = spaces.length
+  var spacesLength = spaceNames.length
 
   return _.times(spacesLength, function (i) {
     return {
       id: faker.random.uuid(),
-      name: spaces[i],
+      name: spaceNames[i],
       host: faker.internet.ip(),
       version: '1.1.' + i
     }

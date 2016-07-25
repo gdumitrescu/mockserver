@@ -9,8 +9,10 @@ module.exports = function () {
   return _.times(10, function () {
     return {
       id: faker.random.uuid(),
-      name: faker.internet.userName(),
-      displayName: faker.name.findName(),
+      username: faker.internet.userName(),
+      email: faker.internet.email(),
+      firstName: faker.name.firstName(),
+      lastName: faker.name.lastName(),
       active: chance.bool({
         likelihood: 75
       })

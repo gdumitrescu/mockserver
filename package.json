@@ -8,12 +8,16 @@
     "eslint": "eslint ./ --fix",
     "jscs": "jscs ./ --fix",
     "lint": "npm run eslint && npm run jscs",
-    "start": "json-server server.js",
+    "start": "node server.js",
     "test": ""
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
+  "engines": {
+    "node": "4.4.6",
+    "npm": ">=3"
+  },
   "dependencies": {
     "chance": "^1.0.1",
     "faker": "^3.0.1",
