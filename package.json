@@ -9,13 +9,12 @@
     "jscs": "jscs ./ --fix",
     "lint": "npm run eslint && npm run jscs",
     "start": "node server.js",
-    "test": ""
+    "test": "npm run lint"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "engines": {
-    "node": "4.9.1",
     "npm": ">=3"
   },
   "dependencies": {
